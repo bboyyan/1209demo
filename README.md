@@ -1,43 +1,92 @@
-# Astro Starter Kit: Minimal
+# LUMIÈRE SPA 🌟
 
-```sh
-npm create astro@latest -- --template minimal
+**Exclusive Care for Ladies** - 極致美胸療程與芳療體驗
+
+一個使用 Astro + React + Framer Motion 建置的高效能 SPA 網站，專為提供優雅的美容服務體驗。
+
+## ✨ 特色功能
+
+- 🎨 **現代化設計**: Glassmorphism 效果與優雅的視覺設計
+- ⚡ **高性能**: Astro Island Architecture 優化載入速度
+- 🎭 **流暢動畫**: Framer Motion 提供豐富的交互动畫
+- 📱 **響應式**: 完美適配桌面、平板與手機裝置
+- 🐳 **Docker 支援**: 輕鬆部署到任何支援 Docker 的平台
+
+## 🚀 快速開始
+
+### 本地開發
+
+```bash
+# 安裝依賴
+npm install
+
+# 啟動開發伺服器
+npm run dev
+
+# 建置生產版本
+npm run build
+
+# 預覽生產版本
+npm run preview
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+### Docker 部署
 
-## 🚀 Project Structure
+```bash
+# 建置映像
+docker build -t lumiere-spa .
 
-Inside of your Astro project, you'll see the following folders and files:
+# 運行容器
+docker run -p 4321:4321 lumiere-spa
+```
 
-```text
+## 🏗️ 專案結構
+
+```
 /
-├── public/
+├── public/                 # 靜態資源
 ├── src/
-│   └── pages/
-│       └── index.astro
+│   ├── components/         # React 元件
+│   │   ├── home/          # 首頁區塊元件
+│   │   ├── layout/        # 佈局元件
+│   │   └── ui/            # UI 元件
+│   ├── layouts/           # Astro 佈局
+│   ├── pages/             # 頁面路由
+│   └── styles/            # 全域樣式
+├── Dockerfile            # Docker 配置
+├── vercel.json           # Vercel 部署配置
+├── netlify.toml          # Netlify 部署配置
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🛠️ 技術棧
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- **Framework**: [Astro](https://astro.build/)
+- **UI Library**: [React](https://reactjs.org/)
+- **Animation**: [Framer Motion](https://www.framer.com/motion/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Deployment**: Docker / Vercel / Netlify / Zeabur
 
-Any static assets, like images, can be placed in the `public/` directory.
+## 📦 指令說明
 
-## 🧞 Commands
+| 指令              | 說明                              |
+| :---------------- | :-------------------------------- |
+| `npm run dev`     | 啟動開發伺服器 (`localhost:4321`) |
+| `npm run build`   | 建置生產版本到 `./dist/`         |
+| `npm run preview` | 本地預覽生產版本                 |
 
-All commands are run from the root of the project, from a terminal:
+## 🎨 設計特色
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+- **優雅色調**: 玫瑰金與中性色系的完美搭配
+- **動態效果**: 滾動觸發動畫與微交互动畫
+- **無障礙設計**: 符合現代網路無障礙標準
+- **效能優化**: Island Architecture 確保最佳載入速度
 
-## 👀 Want to learn more?
+## 📞 聯絡資訊
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+LUMIÈRE SPA - 專為亞洲女性打造的極致美容體驗
+
+---
+
+Built with ❤️ using Astro & React
